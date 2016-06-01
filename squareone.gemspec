@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Joshua Azemoh"]
   spec.email         = ["joshazemoh@gmail.com"]
 
-  spec.summary       = %q{Jekyll site generatior with gulp for task automation.}
-  spec.description   = %q{Jekyll starter site generatior with gulp task automation workflow.}
+  spec.summary       = %q{Jekyll site generator with gulp for task automation.}
+  spec.description   = %q{Jekyll starter site generator with gulp task automation workflow.}
   spec.homepage      = "http://codaye.github.io/squareone"
   spec.license       = "MIT"
 

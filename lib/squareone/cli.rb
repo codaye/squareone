@@ -4,7 +4,8 @@ class Squareone::Cli < Thor
   desc "-v", "Dispaly Squareone version"
   map %w[-v --version] => :version
 
-  # Display gem version
+  # Display gem
+  # USAGE: squareone -v
   def version
     say "squareone #{Squareone::VERSION}"
   end
