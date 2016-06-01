@@ -1,28 +1,30 @@
 # Squareone
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/squareone`. To experiment with that code, run `bin/console` for an interactive prompt.
+__Squareone__ is Jekyll site project generator with Gulp task automation work-flow.
 
-TODO: Delete this and the text above, and describe your gem
+Jekyll is a great tool we use at Codaye but we find ourselves spending a lot of time trying to set it up with Gulp each time we start a new project. We needed a tool to eliminate that initial friction we encounter so we can get straight to implementing our creative ideas.
+
+Squareone is meant to scratch our itch but we made only a few changes to the files Jekyll generates to keep it as generic as possible.
+
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'squareone'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+install Squareone from RubyGems:
 
     $ gem install squareone
 
 ## Usage
 
-TODO: Write usage instructions here
+    $ squareone new project-name
+
+
+## Features
+Jekyll + Gulp = Creative Bliss :). Squareone comes with some defined Gulp tasks which you can modify or add to.
+
+- Instant browser reloads as you make file changes.
+- node-sass for faster Sass compilation.
+- Setup for multiple environment (development/production).
+
 
 ## Development
 
@@ -32,7 +34,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/squareone. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/codaye/squareone. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
