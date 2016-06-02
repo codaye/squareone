@@ -1,5 +1,7 @@
 # Squareone
 
+[![Gem Version](https://badge.fury.io/rb/squareone.svg)](https://badge.fury.io/rb/squareone)
+
 __Squareone__ is Jekyll site project generator with Gulp task automation work-flow.
 
 Jekyll is a great tool we use at Codaye but we find ourselves spending a lot of time trying to set it up with Gulp each time we start a new project. We needed a tool to eliminate that initial friction we encounter so we can get straight to implementing our creative ideas.
