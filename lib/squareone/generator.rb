@@ -3,7 +3,7 @@ require "thor/group"
 
 class Squareone::Generator < Thor::Group
   include Thor::Actions
-  desc "Create an Gulp automated Jekyll project"
+  desc "Create a Gulp automated Jekyll project"
 
   # Declare source files directory
   def self.source_root
