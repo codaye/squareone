@@ -15,13 +15,11 @@ class Squareone::Generator < Thor::Group
 
     @project_title = name.split(/[- _]/).map(&:capitalize).join(' ')
     self.destination_root = File.expand_path(@project_name)
-
-    say set_color("Creating project #{@project_name}...", :green)
   end
 
   # Declare source files directory
   def self.source_root
-    File.expand_path(File.join(File.dirname(__FILE__), "..", "templates"))
+    File.expand_path("../templates", File.dirname(__FILE__))
   end
 
   # Copy files in folders

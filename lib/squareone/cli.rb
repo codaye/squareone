@@ -1,6 +1,6 @@
 require "thor/group"
 
-class Squareone::Cli < Thor
+class Squareone::CLI < Thor
   
   # USAGE: squareone -v
   desc "-v", "Dispaly Squareone version"

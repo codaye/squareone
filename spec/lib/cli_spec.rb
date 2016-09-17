@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Squareone::Cli do
+describe Squareone::CLI do
 
   describe '-v, --version' do
     let(:output) { capture(:stdout) { subject.version } }
