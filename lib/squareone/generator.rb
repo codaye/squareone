@@ -3,18 +3,25 @@ require "thor/group"
 
 class Squareone::Generator < Thor::Group
   include Thor::Actions
+
   desc "Create a Gulp automated Jekyll project"
+  argument :name, type: :string, desc: "Name of the project"
+
+  # Setup generator
+  def setup
+    @project_name = name.downcase
+
+    raise Thor::Error, set_color("ERROR: #{@project_name} already exist.", :red) if File.exist?(@project_name)
+
+    @project_title = name.split(/[- _]/).map(&:capitalize).join(' ')
+    self.destination_root = File.expand_path(@project_name)
+
+    say set_color("Creating project #{@project_name}...", :green)
+  end
 
   # Declare source files directory
   def self.source_root
-    File.expand_path(File.join(File.dirname(__FILE__), "..", "..", "lib", "templates"))
-  end
-
-  # Set template variables
-  def set_variables
-    name = destination_root.split(/\//).last
-    @project_name = name.downcase
-    @project_title = name.split(/[- _]/).map(&:capitalize).join(' ')
+    File.expand_path(File.join(File.dirname(__FILE__), "..", "templates"))
   end
 
   # Copy files in folders
