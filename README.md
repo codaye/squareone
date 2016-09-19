@@ -1,6 +1,6 @@
 # Squareone
 
-[![Gem Version][gem-image]][gem-url] [![Build Status][travis-image]][travis-url] [![Code Climate][codeclimate-image]][codeclimate-url]
+[![Gem Version][gem-image]][gem-url] [![Build Status][travis-image]][travis-url] [![Code Climate][codeclimate-image]][codeclimate-url] [![Test Coverage][coverage-image]][coverage-url]
 
 __Squareone__ is Jekyll site project generator with Gulp task automation work-flow.
 
@@ -51,3 +51,6 @@ The gem is available as open source under the terms of the [MIT License](http://
 
 [codeclimate-url]: https://codeclimate.com/github/codaye/squareone
 [codeclimate-image]: https://codeclimate.com/github/codaye/squareone/badges/gpa.svg
+
+[coverage-image]: https://codeclimate.com/github/codaye/squareone/badges/coverage.svg
+[coverage-url]: https://codeclimate.com/github/codaye/squareone/coverage
