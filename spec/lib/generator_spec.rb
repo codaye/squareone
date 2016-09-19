@@ -62,5 +62,13 @@ describe Squareone::Generator do
         end
       end
     end
+
+    describe "#success_message" do
+      let(:output) { capture(:stdout) { generator.success_message } }
+
+      it "Prints success message" do
+        expect(output).to include "Project my-website created successfully."
+      end
+    end
   end
 end

@@ -50,4 +50,23 @@ class Squareone::Generator < Thor::Group
       copy_file file
     end
   end
+
+  def success_message
+    message = <<-MSG
+    =============================================
+    Project #{@project_name} created successfully.
+
+    1. Move into the project directory.
+      $ cd #{@project_name}
+    
+    2. Install project dependencies.
+      $ npm install
+
+    3. Start local server with gulp watching for changes.
+      $ npm start
+    ===========================================
+    MSG
+
+    say message
+  end
 end
